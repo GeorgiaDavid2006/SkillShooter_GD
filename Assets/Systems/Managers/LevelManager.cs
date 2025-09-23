@@ -84,7 +84,7 @@ public class LevelManager : MonoBehaviour
             uIManager.GameplayUIController.UpdateShotsRemainingLabel();
 
             // uIManager.UpdateLevelCount(LevelCount);
-            uIManager.GameplayUIController.SetLevelLabel(nextScene);
+            uIManager.GameplayUIController.SetLevelLabel(SceneManager.GetActiveScene().buildIndex);
 
             // Set the ball to the current level start position           
             ballManager.SetBallToStartPosition();
